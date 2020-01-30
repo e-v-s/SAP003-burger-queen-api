@@ -4,7 +4,7 @@
   "description": "Burger Queen API",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
+    "start": "babel-node ./api/index.js",
     "dev": "nodemon  --exec babel-node ./api/index.js",
     "migrate": "npx sequelize-cli db:migrate"
   },
