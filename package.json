@@ -2,10 +2,10 @@
   "name": "sap003-burger-queen-api",
   "version": "1.0.0",
   "description": "Burger Queen API",
-  "main": "./index.js",
+  "main": "index.js",
   "scripts": {
-    "start": "./index.js",
-    "dev": "nodemon  --exec babel-node ./api/index.js",
+    "start": "index.js",
+    "dev": "nodemon  --exec babel-node .index.js",
     "migrate": "npx sequelize-cli db:migrate"
   },
   "repository": {
