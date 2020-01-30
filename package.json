@@ -2,7 +2,7 @@
   "name": "sap003-burger-queen-api",
   "version": "1.0.0",
   "description": "Burger Queen API",
-  "main": "index.js",
+  "main": "./api/index.js",
   "scripts": {
     "start": "babel-node ./api/index.js",
     "dev": "nodemon  --exec babel-node ./api/index.js",
