@@ -9,4 +9,4 @@ router.post('/', TablesController.addTables)
 router.get('/:id', TablesController.getTables)
 router.put('/:id', TablesController.updatedTables)
 router.delete('/:id', TablesController.deleteTables)
-export default router
+module.exports = router

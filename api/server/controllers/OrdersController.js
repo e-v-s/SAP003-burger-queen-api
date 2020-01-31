@@ -107,4 +107,4 @@ class OrdersController {
   }
 }
 
-export default OrdersController;
+module.exports = OrdersController;
