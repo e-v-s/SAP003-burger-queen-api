@@ -1,10 +1,10 @@
-import express from '../node_modules/express/lib/express.js';
+//import express from 'express';
 import bodyParser from 'body-parser';
 import ProductsRoutes from './server/routes/ProductsRoutes';
 import TablesRoutes from './server/routes/TablesRoutes';
 import OrdersRoutes from './server/routes/OrdersRoutes';
 
-const app = express();
+const app = require('express');
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
