@@ -1,7 +1,9 @@
-import { Router } from 'express'
+//import { Router } from 'express'
 import ProductsController from '../controllers/ProductsController'
 
-const router = Router()
+
+
+const router = require('Router')
 router.get('/', ProductsController.getAllProducts)
 router.post('/', ProductsController.addProducts)
 router.get('/:id', ProductsController.getProducts)
