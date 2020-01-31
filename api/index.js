@@ -1,10 +1,16 @@
-import express from 'express';
-import bodyParser from 'body-parser';
-import ProductsRoutes from './server/routes/ProductsRoutes';
-import TablesRoutes from './server/routes/TablesRoutes';
-import OrdersRoutes from './server/routes/OrdersRoutes';
+// import express from 'express';
+// import bodyParser from 'body-parser';
+// import ProductsRoutes from './server/routes/ProductsRoutes';
+// import TablesRoutes from './server/routes/TablesRoutes';
+// import OrdersRoutes from './server/routes/OrdersRoutes';
 
-const app = express();
+//const app = express();
+const app = require('express');
+const bodyParser = require('body-parser');
+
+const ProductsRoutes = require('./server/routes/ProductsRoutes');
+const TablesRoutes = require('./server/routes/TablesRoutes');
+const OrdersRoutes = require('./server/routes/OrdersRoutes');
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -24,4 +30,4 @@ app.listen(process.env.PORT, () => {
   console.log(`Server is running on PORT ${port}`);
 });
 
-export default app
+module.exports = app
