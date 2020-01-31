@@ -1,4 +1,4 @@
-import express from '../../node_modules/express';
+import express from '../node_modules/express/lib/express.js';
 import bodyParser from 'body-parser';
 import ProductsRoutes from './server/routes/ProductsRoutes';
 import TablesRoutes from './server/routes/TablesRoutes';
