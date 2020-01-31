@@ -1,7 +1,7 @@
 //import { Router } from 'express'
-import ProductsController from '../controllers/ProductsController'
+//import ProductsController from '../controllers/ProductsController'
 
-
+const ProductsController =  require('../controllers/ProductsController')
 
 const router = require('Router')
 router.get('/', ProductsController.getAllProducts)

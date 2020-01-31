@@ -1,5 +1,7 @@
-import { Router } from 'express'
-import TablesController from '../controllers/TablesController'
+// import { Router } from 'express'
+// import TablesController from '../controllers/TablesController'
+
+const TablesController =  require('../controllers/TablesController')
 
 const router = require('Router')
 router.get('/', TablesController.getAllTables)
