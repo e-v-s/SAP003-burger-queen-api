@@ -20,7 +20,7 @@ app.get('*', (req, res) => res.status(200).send({
   message: 'Boas-vindas à API!',
 }));
 
-app.listen(port, () => {
+app.listen(process.env.PORT, () => {
   console.log(`Server is running on PORT ${port}`);
 });
 
