@@ -1,13 +1,14 @@
 //import express from 'express';
-import bodyParser from 'body-parser';
+//import bodyParser from 'body-parser';
 import ProductsRoutes from './server/routes/ProductsRoutes';
 import TablesRoutes from './server/routes/TablesRoutes';
 import OrdersRoutes from './server/routes/OrdersRoutes';
 
 const app = require('express');
+const parser = require('body-parser')
 
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: false }));
+app.use(parser.json());
+app.use(parser.urlencoded({ extended: false }));
 
 const port = process.env.PORT || 3000;
 
