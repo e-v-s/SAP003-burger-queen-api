@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "index.js",
-    "dev": "nodemon  --exec babel-node .index.js",
+    "dev": "nodemon  --exec babel-node ./api/index.js",
     "migrate": "npx sequelize-cli db:migrate"
   },
   "repository": {
