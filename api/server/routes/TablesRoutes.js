@@ -1,7 +1,7 @@
 import { Router } from 'express'
 import TablesController from '../controllers/TablesController'
 
-const router = Router()
+const router = require('Router')
 router.get('/', TablesController.getAllTables)
 router.post('/', TablesController.addTables)
 router.get('/:id', TablesController.getTables)

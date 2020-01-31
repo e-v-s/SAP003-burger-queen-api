@@ -1,7 +1,7 @@
 import { Router } from 'express'
 import OrdersController from '../controllers/OrdersController'
 
-const router = Router()
+const router = require('Router')
 router.get('/', OrdersController.getAllOrders)
 router.post('/', OrdersController.addOrders)
 router.get('/:id', OrdersController.getOrders)
