@@ -13,8 +13,7 @@ module.exports = {
     "password": null,
     "database": "sap003-burger-queen-api_test",
     "host": "db",
-    "dialect": "postgres",
-    "operatorsAliases": false
+    "dialect": "postgres"
   },
   "production": {
     "username": process.env.DB_USER,
@@ -22,7 +21,6 @@ module.exports = {
     "database": process.env.DB_DATABASE,
     "host": process.env.DB_HOST,
     "dialect": "postgres",
-    "operatorsAliases": false,
     "dialectOptions": {
       "ssl": true
     }
