@@ -1,12 +1,12 @@
-import fs from 'fs'
-import path from 'path'
-import Sequelize from 'sequelize'
-import configJson from '../config/config'
+'use strict';
 
-const basename = path.basename(__filename)
-const env = process.env.NODE_ENV ? process.env.NODE_ENV : 'development'
-
-const config = configJson[env]
+require('dotenv').config()
+const fs = require('fs');
+const path = require('path');
+const sequelize = require('sequelize');
+const basename = path.basename(__filename);
+const env = process.env.NODE_ENV || 'development';
+const config = require(__dirname + '/../config/config.js')[evn];
 
 console.log('this is the environment: ', env)
 
