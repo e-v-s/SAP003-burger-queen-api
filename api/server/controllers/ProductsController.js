@@ -1,8 +1,5 @@
-// import OrdersService from '../services/OrdersService'
-// import Util from '../utils/Utils'
-
-const ProductsService = require('../services/ProductsService')
-const Util = require('../utils/Utils')
+import ProductsService from '../services/ProductsService'
+import Util from '../utils/Utils'
 
 const util = new Util()
 

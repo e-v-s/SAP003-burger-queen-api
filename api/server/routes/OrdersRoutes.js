@@ -7,4 +7,4 @@ router.post('/', OrdersController.addOrders)
 router.get('/:id', OrdersController.getOrders)
 router.put('/:id', OrdersController.updatedOrders)
 router.delete('/:id', OrdersController.deleteOrders)
-export default router
+module.exports = router
