@@ -6,13 +6,14 @@ const path = require('path');
 const sequelize = require('sequelize');
 const basename = path.basename(__filename);
 const env = process.env.NODE_ENV || 'development';
-const config = require(__dirname + '/../config/config.js')[evn];
+const config = require(__dirname + '/../config/config.js')[env];
 
-console.log('this is the environment: ', env)
+console.log('this is the environment: ', env);
 
-const db = {}
+const db = {};
 
-let sequelize
+let sequelize;
+
 if (config.environment === 'production') {
   sequelize = new Sequelize(
       process.env[config.use_env_variable], config
